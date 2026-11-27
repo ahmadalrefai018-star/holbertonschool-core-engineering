@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebSocket Echo</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/chat.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>WebSocket Echo</h1>
+        <p id="status" role="status">Connecting…</p>
+        <ol id="messages" role="log" aria-label="Server responses"></ol>
+        <form id="chat">
+            <label for="message">Message</label>
+            <div class="controls">
+                <input id="message" type="text" autocomplete="off" required>
+                <button id="send" type="submit" disabled>Send</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
